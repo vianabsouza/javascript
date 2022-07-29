@@ -96,5 +96,8 @@ header {
   .mobile-menu .login-button button{
     width: 100%;
   }
-}
 
+  .show-mobile-menu {
+    display: block;
+  }
+}
