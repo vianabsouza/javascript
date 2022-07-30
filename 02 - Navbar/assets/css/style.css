@@ -6,6 +6,7 @@
 }
 
 body {
+  background-color: #d3dbd9;
   font-family: 'Inter', sans-serif;
 }
 
@@ -31,8 +32,13 @@ header {
   list-style: none;
 }
 
+.nav-item:hover {
+  transform: scale(1.2);
+  transition: all 0.5s ease;
+}
+
 .nav-item {
-  margin: 0 15px;
+  margin: 0 20px;
 }
 
 .nav-link {
@@ -42,10 +48,15 @@ header {
 }
 
 .login-button button {
-  background-color: #0187a7;
+  background-color: #62997a;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
   padding: 10px 15px;
+}
+
+.login-button button:hover {
+  background-color: #00755c;
 }
 
 .login-button button a {
@@ -55,12 +66,15 @@ header {
   text-decoration: none;
 }
 
-.mobile-menu-icon,
-.mobile-menu {
+.mobile-menu,
+.mobile-menu-icon {
   display: none;
 }
 
 @media screen and (max-width: 730px) {
+  .nav-bar {
+    padding: 1.5rem 3rem;
+  }
   .nav-item,
   .login-button {
     display: none;
@@ -70,10 +84,13 @@ header {
     display: block;
   }
 
+  .mobile-menu-icon .icon {
+    cursor: pointer;
+  }
+
   .mobile-menu-icon button {
     background-color: transparent;
     border: none;
-    cursor: pointer;
   }
 
   .mobile-menu ul {
