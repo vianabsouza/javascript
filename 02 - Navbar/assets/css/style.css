@@ -75,6 +75,7 @@ header {
   .nav-bar {
     padding: 1.5rem 3rem;
   }
+
   .nav-item,
   .login-button {
     display: none;
