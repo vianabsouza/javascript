@@ -8,34 +8,40 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script defer src="index.js"></script>
     <title>Grogu's Card</title>
   </head>
   <body>
     <div class="card">
       <div class="profile">
-        <img src="./assets/grogu.jpg" alt="Imagem de perfil" />
-        <h1>Grogu</h1>
-        <p>Mando's best friend</p>
+        <img id="image" src="" alt="Imagem de perfil" />
+        <h1 id="name"></h1>
+        <p id="description"></p>
       </div>
       <div class="info-links">
-        <a href="https://pt.wikipedia.org/wiki/Grogu" target="_blank">
+        <a
+          id="wikipedia"
+          href="https://pt.wikipedia.org/wiki/Grogu"
+          target="_blank"
+        >
           <i class="bi bi-wikipedia"></i>
           Wikipedia
         </a>
-        <a
-          href="https://www.disneyplus.com/pt-br/series/the-mandalorian/3jLIGMDYINqD"
-          target="_blank"
-        >
+        <a id="disney" href="" target="_blank">
           <i class="bi bi-cast"></i>
           Disney+
         </a>
-        <a href="https://www.instagram.com/themandalorian/" target="_blank">
+        <a
+          id="instagram"
+          href="https://www.instagram.com/themandalorian/"
+          target="_blank"
+        >
           <i class="bi bi-instagram"></i>
           Instagram
         </a>
       </div>
       <div class="bio">
-        <p>
+        <p id="bio">
           Hello! I'm Grogu, also known as "Baby Yoda." I'm an adorable little
           creature of the same species as the legendary Master Yoda. Discovered
           by the bounty hunter Mandalorian, I embarked on adventures across the
