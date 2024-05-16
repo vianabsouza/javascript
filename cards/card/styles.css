@@ -1,0 +1,66 @@
+body {
+  background: conic-gradient(
+    #000,
+    rgb(102, 178, 114),
+    #333,
+    #555,
+    rgb(102, 178, 114),
+    #333,
+    #000
+  );
+  color: #fff;
+  font-family: sans-serif;
+  height: 100vh;
+}
+
+.card {
+  background: linear-gradient(#0004, #fff4);
+  backdrop-filter: blur(30px);
+  border-radius: 16px;
+  left: 50%;
+  padding: 32px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+}
+
+.profile img {
+  border: 3px solid rgb(102, 178, 114);
+  border-radius: 50%;
+  height: 120px;
+  object-fit: cover;
+  width: 120px;
+}
+
+h1 {
+  margin: 12px 0;
+}
+
+.info-links {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 32px 0 22px;
+}
+
+.info-links .bi {
+  display: inline-block;
+  width: 20px;
+}
+
+.info-links a {
+  background: linear-gradient(#0004, #fff4);
+  border: 1px solid;
+  border-radius: 8px;
+  color: #fff;
+  padding: 8px 28px;
+  text-decoration: none;
+}
+
+.bio {
+  border-radius: 8px;
+  line-height: 22px;
+  text-align: justify;
+  padding: 8px;
+}
