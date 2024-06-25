@@ -1,0 +1,43 @@
+* {
+  box-sizing: bordr-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: gray;
+}
+
+.scroll {
+  border-radius: 5px;
+  margin-inline: auto;
+  mask: linear-gradient(to right, transparent, #fff 15%, #fff 85%, transparent);
+  margin-top: 50px;
+  max-width: 700px;
+  overflow: hidden;
+  padding: 25px;
+}
+
+.scroll__container {
+  animation: infiniteScroll 10s linear infinite;
+  display: flex;
+  gap: 10px;
+  width: max-content;
+}
+
+.scroll__item {
+  background-color: #000;
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px 20px;
+  white-space: nowrap;
+}
+
+@keyframes infiniteScroll {
+  from {
+    translate: 0;
+  }
+  to {
+    translate: calc(-50% - 5px)
+  }
+}
